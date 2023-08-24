@@ -1,0 +1,38 @@
+{
+  "name": "word-vector-fun",
+  "version": "1.0.0",
+  "description": "Just playing with word vectors",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --fix src --ext .js,.jsx,.ts,.tsx",
+    "lint:ci": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && npm start",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmith60/word-vector-fun.git"
+  },
+  "author": "asmith60",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/asmith60/word-vector-fun/issues"
+  },
+  "homepage": "https://github.com/asmith60/word-vector-fun#readme",
+  "devDependencies": {
+    "@types/node": "^20.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "word2vec": "^1.1.5"
+  }
+}
