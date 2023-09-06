@@ -13,7 +13,7 @@ export default class Math extends Command {
   ]
 
   static flags = {
-    size: Flags.integer({char: 's', description: 'size of returned list', default: 10}),
+    size: Flags.integer({char: 's', description: 'size of returned list', default: 1}),
   }
 
   static args = {
